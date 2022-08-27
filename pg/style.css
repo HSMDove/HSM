@@ -1,0 +1,100 @@
+@font-face {
+    font-family:cha ;
+    src: url(/pg/Changa-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background: linear-gradient(#1c122b, #dddddd);
+    height: 100vh;
+    font-family:cha ;
+}
+h2{
+    color: #7a1bff;
+}
+a{
+    color: #ffffff;
+}
+header{
+    position: absolute;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin: 25px;
+
+}
+header ul li a{
+    padding: 6px 10px;
+    border-radius: 20px;
+
+}
+header ul li a:hover, .active{
+    background: white;
+    color: #7a1bff;
+}
+.Move{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Move::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c122b,transparent);
+}
+.Move img{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(50px);
+}
+.HSM{
+    color: #dddddd;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+.content{
+    color: #dddddd;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+    font-size: 30px;
+
+}
+
